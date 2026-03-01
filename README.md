@@ -1,93 +1,46 @@
 # Falcon Crest Bank
 
-## Project Overview
-Falcon Crest Bank is an innovative banking application designed to offer customers a seamless and secure online banking experience. The app allows users to manage their accounts, perform transactions, and access various banking services from the comfort of their homes.
+## Setup Guide
 
-## Features
-- **User Authentication**: Secure login and registration process for users.
-- **Account Management**: Users can view account balances and transaction history.
-- **Funds Transfer**: Easy transfer of funds between accounts.
-- **Bill Payments**: Pay bills quickly and hassle-free.
-- **Dashboard**: View account overview and recent transactions.
-- **Customer Support**: Access to customer service.
-
-## Tech Stack
-- **Frontend**: React.js
-- **Backend**: Node.js with Express
-- **Database**: PostgreSQL
-- **Authentication**: JWT (JSON Web Tokens)
-
-## Project Structure
-```
-falcon-crest-bank/
-├── frontend/                 # React frontend application
-│   ├── src/
-│   ├── public/
-│   └── package.json
-├── backend/                  # Node.js backend API
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── middleware/
-│   └── server.js
-├── database/                 # Database schema and migrations
-│   └── schema.sql
-└── README.md
-```
-
-## Setup Instructions
-
-### Backend Setup
-1. Navigate to the backend directory:
+1. **Clone the Repository:**
    ```bash
-   cd backend
+   git clone https://github.com/emmydoncesspera-beep/Falcon-crest-bank.git
+   cd Falcon-crest-bank
    ```
-2. Install dependencies:
+
+2. **Install Dependencies:**
+   - Make sure you have Node.js and npm installed.
+   - Run the following command to install necessary packages:
    ```bash
    npm install
    ```
-3. Create a .env file with database credentials and JWT secret
-4. Run migrations:
-   ```bash
-   npm run migrate
+
+3. **Environment Variables:**
+   - Create a `.env` file at the root of the project and include the following variables:
+   ```plaintext
+   DATABASE_URL=<your_database_url>
+   SECRET_KEY=<your_secret_key>
    ```
-5. Start the server:
+
+4. **Run the Application:**
    ```bash
    npm start
    ```
 
-### Frontend Setup
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-4. Open http://localhost:3000 in your browser
+## Implementation Details
 
-## API Endpoints
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login user
-- `GET /api/accounts` - Get user accounts
-- `GET /api/transactions` - Get transaction history
-- `POST /api/transfers` - Transfer funds
-- `POST /api/bills/pay` - Pay bills
+This project is designed to provide various banking functionalities including:
+- Account Management
+- Transaction Handling
+- User Authentication
 
-## Security Features
-- Password hashing with bcrypt
-- JWT-based authentication
-- Protected API routes with middleware
-- SQL injection prevention with parameterized queries
-- HTTPS support
+All user data is securely stored using encryption methods and follows best practices to ensure data integrity and security.
 
-## Contributing
-Contributions are welcome! Please feel free to submit pull requests or open issues.
+### Frameworks and Libraries Used:
+- Express.js for server-side handling.
+- Mongoose for MongoDB object modeling.
+- Dotenv for managing environment variables.
+- Bcrypt for password hashing.
 
-## License
-MIT License
+### Contribution Guidelines
+If you wish to contribute to this project, please fork the repository and create a pull request with your changes. Make sure to include clear commit messages and documentation relevant to your modifications.
