@@ -1,46 +1,23 @@
 # Falcon Crest Bank
 
-## Setup Guide
+## Overview
+Falcon Crest Bank is a banking application designed to provide a seamless experience for users to manage their financial activities.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/emmydoncesspera-beep/Falcon-crest-bank.git
-   cd Falcon-crest-bank
-   ```
+## Installation
+To clone this repository, use:
+```
+git clone https://github.com/{USERNAME}/Falcon-crest-bank.git
+```
+Replace `{USERNAME}` with the GitHub username to clone the repository.
 
-2. **Install Dependencies:**
-   - Make sure you have Node.js and npm installed.
-   - Run the following command to install necessary packages:
-   ```bash
-   npm install
-   ```
+## Usage
+To run the application, ensure you have all dependencies installed and execute the following command:
+```
+python app.py
+```
 
-3. **Environment Variables:**
-   - Create a `.env` file at the root of the project and include the following variables:
-   ```plaintext
-   DATABASE_URL=<your_database_url>
-   SECRET_KEY=<your_secret_key>
-   ```
+## Contributing
+Please create a fork of the repository to make changes. Once ready, submit a pull request for review.
 
-4. **Run the Application:**
-   ```bash
-   npm start
-   ```
-
-## Implementation Details
-
-This project is designed to provide various banking functionalities including:
-- Account Management
-- Transaction Handling
-- User Authentication
-
-All user data is securely stored using encryption methods and follows best practices to ensure data integrity and security.
-
-### Frameworks and Libraries Used:
-- Express.js for server-side handling.
-- Mongoose for MongoDB object modeling.
-- Dotenv for managing environment variables.
-- Bcrypt for password hashing.
-
-### Contribution Guidelines
-If you wish to contribute to this project, please fork the repository and create a pull request with your changes. Make sure to include clear commit messages and documentation relevant to your modifications.
+## License
+This project is licensed under the MIT License.
